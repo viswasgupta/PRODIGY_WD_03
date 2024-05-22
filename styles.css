@@ -1,0 +1,106 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff6f61, #de6262, #f6d365);
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-container, .game-container {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.menu-container h1, .game-container h1 {
+    color: #333;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background: #ffecb3;
+    border: 2px solid #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.cell:hover {
+    background: #fff176;
+    transform: scale(1.1);
+}
+
+.cell.x {
+    color: #d32f2f;
+}
+
+.cell.o {
+    color: #1976d2;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(45deg, #ff5722, #ff9800);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff9800, #ff5722);
+    transform: scale(1.05);
+}
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+.menu-container h1, .game-container h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f44336;
+}
+
+button {
+    font-size: 1.1rem;
+    padding: 10px 25px;
+}
+
+#statusMessage {
+    font-size: 1.2rem;
+    color: #f44336;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(3, 80px);
+        grid-template-rows: repeat(3, 80px);
+    }
+    .cell {
+        width: 80px;
+        height: 80px;
+    }
+}
