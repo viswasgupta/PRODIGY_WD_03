@@ -1,7 +1,5 @@
 # PRODIGY_WD_03
 
-# Tic-Tac-Toe Game
-
 Welcome to the colorful and interactive Tic-Tac-Toe game! This project is a simple yet engaging implementation of the classic Tic-Tac-Toe game using HTML, CSS, and JavaScript. You can play against another player or challenge an AI opponent.
 
 ![Tic-Tac-Toe-GoogleChrome2024-05-2207-32-02-ezgif com-speed](https://github.com/viswasgupta/PRODIGY_WD_03/assets/118326079/81f1c50d-84b2-4bd2-bbec-ba599e3b1c0a)
